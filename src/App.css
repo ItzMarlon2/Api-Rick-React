@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/img/galaxy.jpg);
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  width: 100%;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.main .contenedorCard{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 1em;
+}
+
+.main .contenedorInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+.contenedorInput input{
+  width: 300px;
+  height: 40px;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  padding:0 10px;
+  background-color: rgba(0, 0, 0, 0.685);
+  color:white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.contenedorCard .cajaCard{
+  margin: 20px;
+  display: flex;
+  width: 300px;
+  height: 150px;
+  border-radius: 1em;
+  transition: .3s;
+}
+
+.cajaCard:hover{
+  transform: translateY(-20px);
+}
+
+.boxImagen img{
+  object-fit: cover;
+  width: 200px;
+  height: 100%;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.boxParrafo{
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.685);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxParrafo #parrafo2{
+  color:red;
 }
